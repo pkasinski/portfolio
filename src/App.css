@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  font-family: "Questrial", sans-serif;
+body {
+  font-family: "Questrial", "Urbanist", "Montserrat", sans-serif;
+  background-color: var(--antique-white);
   color: var(--night);
 }
 
@@ -12,6 +13,8 @@
   --desert-sand: #e4c4a3;
   --almond: #f2dac1;
   --antique-white: #ffefdf;
+  --aero: #52c0d9;
+  --indian-red: #d95252;
 }
 
 #root {
@@ -19,22 +22,92 @@
 
 .introduction {
   background-color: var(--antique-white);
-  padding: 120px 160px;
+  padding: 160px;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.Typewriter {
+.title {
   font-size: 80px;
-  font-weight: bold;
   line-height: 1.2;
+  font-weight: bold;
 }
 
-.intro-text {
+.heading {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.heading-small {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.text-big {
   font-size: 28px;
 }
 
-.timeline {
+.text-medium {
+  font-size: 22px;
+}
+
+.background {
   background-color: var(--night);
-  height: 400px;
+  color: var(--antique-white);
+  padding: 160px;
+}
+
+.background .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.background .heading {
+  margin-bottom: 40px;
+}
+
+.line {
+  width: 8px;
+  flex-shrink: 0;
+}
+
+.bsc-container {
+  display: flex;
+  gap: 20px;
+  min-height: 620px;
+}
+
+.bsc-container .line {
+  background-color: var(--aero);
+  margin-right: 16px;
+}
+
+.bsc-container .description {
+  padding: 16px;
+  padding-top: 0;
+}
+
+.bsc-container .description .heading-small {
+  color: var(--aero);
+}
+
+.toyota-container {
+  display: flex;
+  gap: 20px;
+  min-height: 80px;
+}
+
+.toyota-container .line {
+  background-color: var(--indian-red);
+  margin-left: 16px;
+}
+
+.toyota-container .description .heading-small {
+  color: var(--indian-red);
 }
 
 .projects {
