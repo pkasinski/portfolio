@@ -13,13 +13,13 @@ body {
   --desert-sand: #e4c4a3;
   --almond: #f2dac1;
   --antique-white: #ffefdf;
-  --aero: #52c0d9;
-  --indian-red: #d95252;
-  --emerald: #52d97b;
-  --royal-blue: #5274d9;
-  --citron: #d9cb52;
-  --burnt-sienna: #d97652;
-  --mulberry: #d9529f;
+  --light-sky-blue: #6ec9f7;
+  --light-red: #f76e6e;
+  --mindaro: #c9f76e;
+  --medium-slate-blue: #6e6ef7;
+  --persian-pink: #f986d2;
+  --saffron: #f7c96e;
+  --screamin-green: #6ef76e;
 }
 
 #root {
@@ -86,40 +86,40 @@ body {
 }
 
 .bsc-line {
-  background-color: var(--aero);
+  background-color: var(--light-sky-blue);
   height: 620px;
 }
 
 .toyota-line {
-  background-color: var(--indian-red);
+  background-color: var(--light-red);
   height: 80px;
   margin-top: 620px;
 }
 
 .exchange-line {
-  background-color: var(--emerald);
+  background-color: var(--mindaro);
   height: 100px;
 }
 
 .msc-line {
-  background-color: var(--royal-blue);
+  background-color: var(--medium-slate-blue);
   height: 420px;
   margin-top: 80px;
 }
 
 .volvo-summer-line {
-  background-color: var(--citron);
+  background-color: var(--persian-pink);
   height: 60px;
   margin-top: 60px;
 }
 
 .volvo-autumn-line {
-  background-color: var(--burnt-sienna);
+  background-color: var(--saffron);
   height: 40px;
 }
 
 .volvo-thesis-line {
-  background-color: var(--mulberry);
+  background-color: var(--screamin-green);
   height: 120px;
   margin-top: 40px;
 }
@@ -131,31 +131,31 @@ body {
 }
 
 .bsc-description .heading-small {
-  color: var(--aero);
+  color: var(--light-sky-blue);
 }
 
 .toyota-description .heading-small {
-  color: var(--indian-red);
+  color: var(--light-red);
 }
 
 .exchange-description .heading-small {
-  color: var(--emerald);
+  color: var(--mindaro);
 }
 
 .msc-description .heading-small {
-  color: var(--royal-blue);
+  color: var(--medium-slate-blue);
 }
 
 .volvo-summer-description .heading-small {
-  color: var(--citron);
+  color: var(--persian-pink);
 }
 
 .volvo-autumn-description .heading-small {
-  color: var(--burnt-sienna);
+  color: var(--saffron);
 }
 
 .volvo-thesis-description .heading-small {
-  color: var(--mulberry);
+  color: var(--screamin-green);
 }
 
 .projects {
