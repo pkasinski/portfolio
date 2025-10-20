@@ -15,6 +15,11 @@ body {
   --antique-white: #ffefdf;
   --aero: #52c0d9;
   --indian-red: #d95252;
+  --emerald: #52d97b;
+  --royal-blue: #5274d9;
+  --citron: #d9cb52;
+  --burnt-sienna: #d97652;
+  --mulberry: #d9529f;
 }
 
 #root {
@@ -61,13 +66,18 @@ body {
   padding: 160px;
 }
 
-.background .container {
-  display: flex;
-  flex-direction: column;
-}
-
 .background .heading {
   margin-bottom: 40px;
+}
+
+.background .container {
+  display: flex;
+  gap: 20px;
+}
+
+.timeline {
+  display: flex;
+  gap: 8px;
 }
 
 .line {
@@ -75,39 +85,77 @@ body {
   flex-shrink: 0;
 }
 
-.bsc-container {
-  display: flex;
-  gap: 20px;
-  min-height: 620px;
-}
-
-.bsc-container .line {
+.bsc-line {
   background-color: var(--aero);
-  margin-right: 16px;
+  height: 620px;
 }
 
-.bsc-container .description {
-  padding: 16px;
-  padding-top: 0;
+.toyota-line {
+  background-color: var(--indian-red);
+  height: 80px;
+  margin-top: 620px;
 }
 
-.bsc-container .description .heading-small {
+.exchange-line {
+  background-color: var(--emerald);
+  height: 100px;
+}
+
+.msc-line {
+  background-color: var(--royal-blue);
+  height: 420px;
+  margin-top: 80px;
+}
+
+.volvo-summer-line {
+  background-color: var(--citron);
+  height: 60px;
+  margin-top: 60px;
+}
+
+.volvo-autumn-line {
+  background-color: var(--burnt-sienna);
+  height: 40px;
+}
+
+.volvo-thesis-line {
+  background-color: var(--mulberry);
+  height: 120px;
+  margin-top: 40px;
+}
+
+.background .descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bsc-description .heading-small {
   color: var(--aero);
 }
 
-.toyota-container {
-  display: flex;
-  gap: 20px;
-  min-height: 80px;
-}
-
-.toyota-container .line {
-  background-color: var(--indian-red);
-  margin-left: 16px;
-}
-
-.toyota-container .description .heading-small {
+.toyota-description .heading-small {
   color: var(--indian-red);
+}
+
+.exchange-description .heading-small {
+  color: var(--emerald);
+}
+
+.msc-description .heading-small {
+  color: var(--royal-blue);
+}
+
+.volvo-summer-description .heading-small {
+  color: var(--citron);
+}
+
+.volvo-autumn-description .heading-small {
+  color: var(--burnt-sienna);
+}
+
+.volvo-thesis-description .heading-small {
+  color: var(--mulberry);
 }
 
 .projects {

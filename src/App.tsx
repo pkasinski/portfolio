@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Typewriter from "typewriter-effect";
+import Experience from "./components/Experience";
 
 export default function App() {
   const [showCursor, setShowCursor] = useState(true);
@@ -32,41 +33,113 @@ export default function App() {
         </p>
       </section>
       <section className="background">
+        <p className="heading">Background</p>
         <div className="container">
-          <p className="heading">Background</p>
-          <div className="bsc-container">
-            <div className="line"></div>
-            <div className="description">
-              <p className="heading-small">2020 - 2023</p>
-              <p className="heading-small">CHALMERS UNIVERSITY OF TECHNOLOGY</p>
-              <p className="text-big"> Software Engineering, BSc</p>
-              <p className="text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+          <div className="timeline">
+            <div className="timeline-left">
+              <div className="line bsc-line"></div>
+              <div className="line msc-line"></div>
+            </div>
+            <div className="timeline-right">
+              <div className="line toyota-line"></div>
+              <div className="line exchange-line"></div>
+              <div className="line volvo-summer-line"></div>
+              <div className="line volvo-autumn-line"></div>
+              <div className="line volvo-thesis-line"></div>
             </div>
           </div>
-          <div className="toyota-container">
-            <div className="line"></div>
-            <div className="description">
-              <p className="heading-small">June 2023 - September 2023</p>
-              <p className="heading-small">TOYOTA MATERIAL HANDLING</p>
-              <p className="text-big">System Developer (Summer Intern)</p>
-              <p className="text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <div className="descriptions">
+            <Experience
+              className="bsc-description"
+              timeSpan="2020 - 2023"
+              organization="CHALMERS UNIVERSITY OF TECHNOLOGY"
+              role="Software Engineering, BSc"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="toyota-description"
+              timeSpan="June 2023 - September 2023"
+              organization="TOYOTA MATERIAL HANDLING"
+              role="System Developer (Summer Intern)"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="exchange-description"
+              timeSpan="October 2023 - February 2024"
+              organization="WARSAW UNIVERSITY OF TECHNOLOGY"
+              role="Exchange Studies"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="msc-description"
+              timeSpan="2023 - 2025"
+              organization="CHALMERS UNIVERSITY OF TECHNOLOGY"
+              role="Computer Science and Engineering, MSc"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="volvo-summer-description"
+              timeSpan="June 2024 - August 2024"
+              organization="VOLVO GROUP"
+              role="Software Developer (Summer Worker)"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="volvo-autumn-description"
+              timeSpan="September 2024 - October 2024"
+              organization="VOLVO GROUP"
+              role="App Developer (Part-Time)"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
+            <Experience
+              className="volvo-thesis-description"
+              timeSpan="January 2025 - June 2025"
+              organization="VOLVO GROUP"
+              role="Thesis Student"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ></Experience>
           </div>
         </div>
       </section>
