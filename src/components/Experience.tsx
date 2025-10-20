@@ -5,14 +5,14 @@ export default function Experience({
   timeSpan,
   organization,
   role,
-  description,
+  children,
 }: ExperienceProps) {
   return (
     <div className={className}>
       <p className="heading-small">{timeSpan}</p>
       <p className="heading-small">{organization}</p>
       <p className="text-big">{role}</p>
-      <p className="text-medium">{description}</p>
+      <p className="text-medium">{children}</p>
     </div>
   );
 }

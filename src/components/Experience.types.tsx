@@ -3,5 +3,5 @@ export interface ExperienceProps {
   timeSpan?: string;
   organization?: string;
   role?: string;
-  description?: string;
+  children?: React.ReactNode;
 }

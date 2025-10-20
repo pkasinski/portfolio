@@ -54,91 +54,72 @@ export default function App() {
               timeSpan="2020 - 2023"
               organization="CHALMERS UNIVERSITY OF TECHNOLOGY"
               role="Software Engineering, BSc"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-            ></Experience>
+            >
+              In 2020 I moved to Gothenburg to study software engineering at
+              Chalmers University of Technology. The duration of the programme
+              is five years and it is separated into three years of bachelor's
+              studies and two years of master's studies. In the first three
+              years, I took a variety of courses, but the main focus was on
+              software development and mathematics. Toward the end of these
+              three years I carried out a bachelor's thesis project in which I,
+              together with my group, developed a system that uses machine
+              learning to classify the difficulty of navigating a river based on
+              satellite images. During my bachelor's studies I took courses such
+              as{" "}
+              <span className="typewriter-inline">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Discrete mathematics, Introduction to computer engineering, Linear algebra.",
+                      "Object oriented programming, Design and implementation of graphical interfaces, Communication and professional development.",
+                      "Calculus, Technology for a global sustainable society, Physics for engineers.",
+                      "Medicine for the engineer, Object-oriented programming and design, Multivariable calculus.",
+                      "Introduction to data science and AI, Machine oriented programming, Agile software project management.",
+                      "Mathematical statistics and discrete mathematics, Object-oriented programming project, Mathematical modelling and problem solving.",
+                      "Software engineering principles for complex systems, Data structures and algorithms, Databases.",
+                      "Professional development for engineers and English.",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            </Experience>
             <Experience
               className="toyota-description"
               timeSpan="June 2023 - September 2023"
               organization="TOYOTA MATERIAL HANDLING"
               role="System Developer (Summer Intern)"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
             <Experience
               className="exchange-description"
               timeSpan="October 2023 - February 2024"
               organization="WARSAW UNIVERSITY OF TECHNOLOGY"
               role="Exchange Studies"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
             <Experience
               className="msc-description"
               timeSpan="2023 - 2025"
               organization="CHALMERS UNIVERSITY OF TECHNOLOGY"
               role="Computer Science and Engineering, MSc"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
             <Experience
               className="volvo-summer-description"
               timeSpan="June 2024 - August 2024"
               organization="VOLVO GROUP"
               role="Software Developer (Summer Worker)"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
             <Experience
               className="volvo-autumn-description"
               timeSpan="September 2024 - October 2024"
               organization="VOLVO GROUP"
               role="App Developer (Part-Time)"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
             <Experience
               className="volvo-thesis-description"
               timeSpan="January 2025 - June 2025"
               organization="VOLVO GROUP"
               role="Thesis Student"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
             ></Experience>
           </div>
         </div>

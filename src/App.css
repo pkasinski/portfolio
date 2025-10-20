@@ -158,6 +158,14 @@ body {
   color: var(--screamin-green);
 }
 
+.typewriter-inline {
+  display: inline;
+}
+
+.typewriter-inline > div {
+  display: inline;
+}
+
 .projects {
   background-color: var(--eerie-black);
   height: 400px;
