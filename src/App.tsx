@@ -6,28 +6,30 @@ export default function App() {
   return (
     <>
       <section className="introduction">
-        <div className="title">
-          <Typewriter
-            options={{
-              cursor: "",
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello, my name is Pawel Kasinski.")
-                .callFunction(() => {
-                  typewriter.stop();
-                })
-                .start();
-            }}
-          />
+        <div className="container">
+          <div className="title">
+            <Typewriter
+              options={{
+                cursor: "",
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Hello, my name is Pawel Kasinski.")
+                  .callFunction(() => {
+                    typewriter.stop();
+                  })
+                  .start();
+              }}
+            />
+          </div>
+          <p className="undertitle">
+            I am a software developer based in Gothenburg with a master's degree
+            in computer science and engineering, and work experience from Volvo
+            Group and Toyota Material Handling. My interests range from
+            algorithms, data science and backend development to UI/UX design and
+            frontend development.
+          </p>
         </div>
-        <p className="text-big">
-          I am a software developer based in Gothenburg with a master's degree
-          in computer science and engineering, and work experience from Volvo
-          Group and Toyota Material Handling. My interests range from
-          algorithms, data science and backend development to UI/UX design and
-          frontend development.
-        </p>
       </section>
       <section className="background">
         <p className="heading heading-big">Background</p>

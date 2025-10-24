@@ -27,17 +27,26 @@ body {
 
 .introduction {
   background-color: var(--antique-white);
-  padding: 160px;
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.introduction .container {
+  max-width: 1400px;
+  padding: 40px;
 }
 
 .title {
-  font-size: 80px;
+  font-size: clamp(2.25rem, 5vw, 5rem);
   line-height: 1.2;
   font-weight: bold;
+}
+
+.undertitle {
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
 }
 
 .heading {
@@ -55,10 +64,6 @@ body {
 
 .heading-small {
   font-size: 20px;
-}
-
-.text-big {
-  font-size: 28px;
 }
 
 .text-medium {
