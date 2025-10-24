@@ -22,24 +22,11 @@ body {
   --screamin-green: #6ef76e;
 }
 
-#root {
-}
-
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.introduction {
-  background-color: var(--antique-white);
-  min-height: 90vh;
-}
-
-.introduction .container {
-  max-width: 1400px;
-  padding: 40px;
 }
 
 .text-title {
@@ -73,120 +60,6 @@ section {
 
 .text-small {
   font-size: 1.25rem;
-}
-
-.background {
-  background-color: var(--night);
-  color: var(--antique-white);
-}
-
-.background .container {
-  max-width: 1400px;
-  padding: 120px 40px;
-}
-
-.background .text-section-title {
-  margin-bottom: 40px;
-}
-
-.background .container-inner {
-  display: flex;
-  gap: 20px;
-}
-
-.timeline {
-  display: flex;
-  gap: 8px;
-}
-
-.line {
-  width: 8px;
-  flex-shrink: 0;
-}
-
-.bsc-line {
-  background-color: var(--light-sky-blue);
-  height: 620px;
-}
-
-.toyota-line {
-  background-color: var(--light-red);
-  height: 80px;
-  margin-top: 620px;
-}
-
-.exchange-line {
-  background-color: var(--mindaro);
-  height: 100px;
-}
-
-.msc-line {
-  background-color: var(--medium-slate-blue);
-  height: 420px;
-  margin-top: 80px;
-}
-
-.volvo-summer-line {
-  background-color: var(--persian-pink);
-  height: 60px;
-  margin-top: 60px;
-}
-
-.volvo-autumn-line {
-  background-color: var(--saffron);
-  height: 40px;
-}
-
-.volvo-thesis-line {
-  background-color: var(--screamin-green);
-  height: 120px;
-  margin-top: 40px;
-}
-
-.background .descriptions {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.description .heading-medium {
-  margin-bottom: 8px;
-}
-
-.bsc-description .heading {
-  color: var(--light-sky-blue);
-}
-
-.bsc-description .text {
-  color: var(--light-sky-blue);
-}
-
-.toyota-description .heading {
-  color: var(--light-red);
-}
-
-.exchange-description .heading {
-  color: var(--mindaro);
-}
-
-.msc-description .heading {
-  color: var(--medium-slate-blue);
-}
-
-.volvo-summer-description .heading {
-  color: var(--persian-pink);
-}
-
-.volvo-autumn-description .heading {
-  color: var(--saffron);
-}
-
-.volvo-thesis-description .heading {
-  color: var(--screamin-green);
-}
-
-.typewriter-inline > div {
-  display: inline;
 }
 
 .projects {
