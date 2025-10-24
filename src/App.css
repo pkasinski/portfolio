@@ -41,15 +41,20 @@ body {
 }
 
 .heading {
-  font-size: 60px;
   line-height: 1.2;
   font-weight: bold;
 }
 
+.heading-big {
+  font-size: 60px;
+}
+
+.heading-medium {
+  font-size: 28px;
+}
+
 .heading-small {
   font-size: 20px;
-  line-height: 1.2;
-  font-weight: bold;
 }
 
 .text-big {
@@ -66,7 +71,7 @@ body {
   padding: 160px;
 }
 
-.background .heading {
+.background .heading-big {
   margin-bottom: 40px;
 }
 
@@ -130,36 +135,40 @@ body {
   gap: 40px;
 }
 
-.bsc-description .heading-small {
+.description .heading-medium {
+  margin-bottom: 8px;
+}
+
+.bsc-description .heading {
   color: var(--light-sky-blue);
 }
 
-.toyota-description .heading-small {
+.bsc-description .text {
+  color: var(--light-sky-blue);
+}
+
+.toyota-description .heading {
   color: var(--light-red);
 }
 
-.exchange-description .heading-small {
+.exchange-description .heading {
   color: var(--mindaro);
 }
 
-.msc-description .heading-small {
+.msc-description .heading {
   color: var(--medium-slate-blue);
 }
 
-.volvo-summer-description .heading-small {
+.volvo-summer-description .heading {
   color: var(--persian-pink);
 }
 
-.volvo-autumn-description .heading-small {
+.volvo-autumn-description .heading {
   color: var(--saffron);
 }
 
-.volvo-thesis-description .heading-small {
+.volvo-thesis-description .heading {
   color: var(--screamin-green);
-}
-
-.typewriter-inline {
-  display: inline;
 }
 
 .typewriter-inline > div {

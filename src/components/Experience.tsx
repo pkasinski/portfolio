@@ -9,9 +9,9 @@ export default function Experience({
 }: ExperienceProps) {
   return (
     <div className={className}>
-      <p className="heading-small">{timeSpan}</p>
-      <p className="heading-small">{organization}</p>
-      <p className="text-big">{role}</p>
+      <p className="heading heading-small">{timeSpan}</p>
+      <p className="heading heading-small">{organization}</p>
+      <p className="heading heading-medium">{role}</p>
       <p className="text-medium">{children}</p>
     </div>
   );

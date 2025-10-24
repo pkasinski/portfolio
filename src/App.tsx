@@ -1,11 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import Typewriter from "typewriter-effect";
 import Experience from "./components/Experience";
 
 export default function App() {
-  const [showCursor, setShowCursor] = useState(true);
-
   return (
     <>
       <section className="introduction">
@@ -33,7 +30,7 @@ export default function App() {
         </p>
       </section>
       <section className="background">
-        <p className="heading">Background</p>
+        <p className="heading heading-big">Background</p>
         <div className="container">
           <div className="timeline">
             <div className="timeline-left">
@@ -50,7 +47,7 @@ export default function App() {
           </div>
           <div className="descriptions">
             <Experience
-              className="bsc-description"
+              className="description bsc-description"
               timeSpan="2020 - 2023"
               organization="CHALMERS UNIVERSITY OF TECHNOLOGY"
               role="Software Engineering, BSc"
