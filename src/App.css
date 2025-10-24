@@ -25,13 +25,16 @@ body {
 #root {
 }
 
-.introduction {
-  background-color: var(--antique-white);
-  min-height: 90vh;
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.introduction {
+  background-color: var(--antique-white);
+  min-height: 90vh;
 }
 
 .introduction .container {
@@ -39,14 +42,16 @@ body {
   padding: 40px;
 }
 
-.title {
+.text-title {
   font-size: clamp(2.25rem, 5vw, 5rem);
-  line-height: 1.2;
-  font-weight: bold;
 }
 
-.undertitle {
+.text-undertitle {
   font-size: clamp(1.25rem, 5vw, 1.75rem);
+}
+
+.text-section-title {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
 }
 
 .heading {
@@ -54,33 +59,37 @@ body {
   font-weight: bold;
 }
 
-.heading-big {
-  font-size: 60px;
-}
-
-.heading-medium {
-  font-size: 28px;
-}
-
-.heading-small {
-  font-size: 20px;
+.text-big {
+  font-size: 1.75rem;
 }
 
 .text-medium {
-  font-size: 22px;
+  font-size: 1.5rem;
+}
+
+.text-medium-responsive {
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+}
+
+.text-small {
+  font-size: 1.25rem;
 }
 
 .background {
   background-color: var(--night);
   color: var(--antique-white);
-  padding: 160px;
-}
-
-.background .heading-big {
-  margin-bottom: 40px;
 }
 
 .background .container {
+  max-width: 1400px;
+  padding: 120px 40px;
+}
+
+.background .text-section-title {
+  margin-bottom: 40px;
+}
+
+.background .container-inner {
   display: flex;
   gap: 20px;
 }
