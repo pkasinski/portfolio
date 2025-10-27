@@ -1,14 +1,14 @@
 .contact {
   background-color: var(--light-orange);
   color: var(--night);
-  min-height: 90vh;
 }
 
 .contact .container {
+  width: 100%;
   max-width: 1400px;
   padding: 120px 40px;
 }
 
-.contact .text-section-title {
-  margin-bottom: 40px;
+.contact a {
+  color: inherit;
 }

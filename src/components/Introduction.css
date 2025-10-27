@@ -4,6 +4,7 @@
 }
 
 .introduction .container {
+  width: 100%;
   max-width: 1400px;
   padding: 120px 40px;
 }

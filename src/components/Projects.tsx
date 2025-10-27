@@ -1,7 +1,7 @@
 import "../App.css";
 import "./Projects.css";
 
-export default function Background() {
+export default function Projects() {
   return (
     <section className="projects">
       <div className="container">
