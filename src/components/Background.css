@@ -18,6 +18,7 @@
 }
 
 .timeline {
+  height: 1600px;
   display: flex;
   gap: 8px;
 }
@@ -29,41 +30,53 @@
 
 .bsc-line {
   background-color: var(--light-sky-blue);
-  height: 620px;
+  height: calc(100% * 31 / 56);
 }
 
-.toyota-line {
-  background-color: var(--light-red);
-  height: 80px;
-  margin-top: 620px;
-}
-
-.exchange-line {
-  background-color: var(--mindaro);
-  height: 100px;
+.pre-msc-line {
+  height: calc(100% * 4 / 56);
 }
 
 .msc-line {
   background-color: var(--medium-slate-blue);
-  height: 420px;
-  margin-top: 80px;
+  height: calc(100% * 21 / 56);
+}
+
+.pre-toyota-line {
+  height: calc(100% * 31 / 56);
+}
+
+.toyota-line {
+  background-color: var(--light-red);
+  height: calc(100% * 4 / 56);
+}
+
+.exchange-line {
+  background-color: var(--mindaro);
+  height: calc(100% * 5 / 56);
+}
+
+.pre-volvo-summer-line {
+  height: calc(100% * 3 / 56);
 }
 
 .volvo-summer-line {
   background-color: var(--persian-pink);
-  height: 60px;
-  margin-top: 60px;
+  height: calc(100% * 3 / 56);
 }
 
 .volvo-autumn-line {
   background-color: var(--saffron);
-  height: 40px;
+  height: calc(100% * 2 / 56);
+}
+
+.pre-volvo-thesis-line {
+  height: calc(100% * 2 / 56);
 }
 
 .volvo-thesis-line {
   background-color: var(--screamin-green);
-  height: 120px;
-  margin-top: 40px;
+  height: calc(100% * 6 / 56);
 }
 
 .background .descriptions {

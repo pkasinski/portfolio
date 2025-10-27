@@ -12,13 +12,17 @@ export default function Background() {
           <div className="timeline">
             <div className="timeline-left">
               <div className="line bsc-line"></div>
+              <div className="line pre-msc-line"></div>
               <div className="line msc-line"></div>
             </div>
             <div className="timeline-right">
+              <div className="line pre-toyota-line"></div>
               <div className="line toyota-line"></div>
               <div className="line exchange-line"></div>
+              <div className="line pre-volvo-summer-line"></div>
               <div className="line volvo-summer-line"></div>
               <div className="line volvo-autumn-line"></div>
+              <div className="line pre-volvo-thesis-line"></div>
               <div className="line volvo-thesis-line"></div>
             </div>
           </div>
