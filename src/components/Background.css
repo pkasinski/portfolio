@@ -69,7 +69,10 @@
 .background .descriptions {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+}
+
+.description {
+  margin-bottom: 2lh;
 }
 
 .description-text {
@@ -104,11 +107,11 @@
   color: var(--screamin-green);
 }
 
-.typewriter {
+.background .typewriter {
   display: inline-block;
   min-height: 2lh;
 }
 
-.typewriter .text {
+.background .typewriter .text {
   font-style: italic;
 }
