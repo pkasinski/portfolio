@@ -44,6 +44,7 @@ export default function Background() {
               learning to classify the difficulty of navigating a river based on
               satellite images. <br></br>
               <Typewriter
+                className="bsc-courses"
                 preceedingText="During my bachelor's studies I took courses such
               as "
                 strings={[
@@ -122,6 +123,7 @@ export default function Background() {
               understanding of algorithms, machine learning, and the underlying
               principles of programming languages.{" "}
               <Typewriter
+                className="msc-courses"
                 preceedingText="After coming back from the student exchange I took courses such
               as "
                 strings={[
