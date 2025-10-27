@@ -10,8 +10,7 @@ body {
   --night: #161413;
   --eerie-black: #201e1c;
   --jet: #35312e;
-  --desert-sand: #e4c4a3;
-  --almond: #f2dac1;
+  --light-orange: #ffdcb8;
   --antique-white: #ffefdf;
   --light-sky-blue: #6ec9f7;
   --light-red: #f76e6e;
@@ -62,7 +61,7 @@ section {
   font-size: 1.25rem;
 }
 
-.projects {
-  background-color: var(--eerie-black);
-  height: 400px;
+footer {
+  background-color: var(--antique-white);
+  height: 200px;
 }
