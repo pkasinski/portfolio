@@ -80,10 +80,6 @@
   color: var(--light-sky-blue);
 }
 
-.bsc-description .text {
-  color: var(--light-sky-blue);
-}
-
 .toyota-description .heading {
   color: var(--light-red);
 }
@@ -108,6 +104,11 @@
   color: var(--screamin-green);
 }
 
-.typewriter-inline > div {
-  display: inline;
+.typewriter {
+  display: inline-block;
+  min-height: 2lh;
+}
+
+.typewriter .text {
+  font-style: italic;
 }

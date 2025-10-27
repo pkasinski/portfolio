@@ -1,7 +1,7 @@
 import "../App.css";
 import "./Background.css";
-import Typewriter from "typewriter-effect";
 import Experience from "./Experience";
+import Typewriter from "./Typewriter";
 
 export default function Background() {
   return (
@@ -38,26 +38,37 @@ export default function Background() {
               three years I carried out a bachelor's thesis project in which I,
               together with my group, developed a system that uses machine
               learning to classify the difficulty of navigating a river based on
-              satellite images. During my bachelor's studies I took courses such
-              as{" "}
-              <span className="typewriter-inline">
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Discrete mathematics, Introduction to computer engineering, Linear algebra.",
-                      "Object oriented programming, Design and implementation of graphical interfaces, Communication and professional development.",
-                      "Calculus, Technology for a global sustainable society, Physics for engineers.",
-                      "Medicine for the engineer, Object-oriented programming and design, Multivariable calculus.",
-                      "Introduction to data science and AI, Machine oriented programming, Agile software project management.",
-                      "Mathematical statistics and discrete mathematics, Object-oriented programming project, Mathematical modelling and problem solving.",
-                      "Software engineering principles for complex systems, Data structures and algorithms, Databases.",
-                      "Professional development for engineers and English.",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </span>
+              satellite images. <br></br>
+              <Typewriter
+                preceedingText="During my bachelor's studies I took courses such
+              as "
+                strings={[
+                  "Discrete mathematics.",
+                  "Introduction to computer engineering.",
+                  "Linear algebra.",
+                  "Object oriented programming.",
+                  "Design and implementation of graphical interfaces.",
+                  "Communication and professional development.",
+                  "Calculus.",
+                  "Technology for a global sustainable society.",
+                  "Physics for engineers.",
+                  "Medicine for the engineer.",
+                  "Object-oriented programming and design.",
+                  "Multivariable calculus.",
+                  "Introduction to data science and AI.",
+                  "Machine oriented programming.",
+                  "Agile software project management.",
+                  "Mathematical statistics and discrete mathematics.",
+                  "Object-oriented programming project.",
+                  "Mathematical modelling and problem solving.",
+                  "Software engineering principles for complex systems.",
+                  "Data structures and algorithms.",
+                  "Databases.",
+                  "Professional development for engineers and English.",
+                ]}
+                loop={true}
+                typingSpeed={80}
+              ></Typewriter>
             </Experience>
             <Experience
               className="toyota-description"

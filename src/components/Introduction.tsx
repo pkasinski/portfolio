@@ -1,26 +1,17 @@
 import "../App.css";
 import "./Introduction.css";
-import Typewriter from "typewriter-effect";
+import Typewriter from "./Typewriter";
 
 export default function Introduction() {
   return (
     <section className="introduction">
       <div className="container">
-        <div className="heading text-title">
-          <Typewriter
-            options={{
-              cursor: "",
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello, my name is Pawel Kasinski.")
-                .callFunction(() => {
-                  typewriter.stop();
-                })
-                .start();
-            }}
-          />
-        </div>
+        <Typewriter
+          className="heading text-title"
+          strings={["Hello, my name is Pawel Kasinski."]}
+          loop={false}
+          typingSpeed={80}
+        ></Typewriter>
         <p className="text-undertitle">
           I am a software developer based in Gothenburg with a master's degree
           in computer science and engineering, and work experience from Volvo
