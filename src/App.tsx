@@ -3,15 +3,9 @@ import Introduction from "./components/Introduction";
 import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import { scrollToSection } from "./utils";
 
 export default function App() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <>
       <Introduction></Introduction>

@@ -1,4 +1,5 @@
 import "../App.css";
+import { scrollToSection } from "../utils";
 import "./Introduction.css";
 import Typewriter from "./Typewriter";
 
@@ -19,6 +20,32 @@ export default function Introduction() {
           algorithms, data science and backend development to UI/UX design and
           frontend development.
         </p>
+        <div className="internal-links">
+          <button
+            className="text-medium-responsive"
+            onClick={() => {
+              scrollToSection("background");
+            }}
+          >
+            Background
+          </button>
+          <button
+            className="text-medium-responsive"
+            onClick={() => {
+              scrollToSection("projects");
+            }}
+          >
+            Projects
+          </button>
+          <button
+            className="text-medium-responsive"
+            onClick={() => {
+              scrollToSection("contact");
+            }}
+          >
+            Contact
+          </button>
+        </div>
       </div>
     </section>
   );
