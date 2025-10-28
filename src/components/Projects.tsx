@@ -3,7 +3,7 @@ import "./Projects.css";
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container">
         <p className="heading text-section-title">Projects</p>
       </div>

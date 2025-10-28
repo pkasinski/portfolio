@@ -63,5 +63,41 @@ section {
 
 footer {
   background-color: var(--antique-white);
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 28px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 1.25rem;
+  padding: 12px;
+}
+
+.footer-links a:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer p {
+  padding: 0 40px;
+  text-align: center;
 }

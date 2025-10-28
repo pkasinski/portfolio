@@ -4,7 +4,7 @@ import Typewriter from "./Typewriter";
 
 export default function Introduction() {
   return (
-    <section className="introduction">
+    <section id="introduction" className="introduction">
       <div className="container">
         <Typewriter
           className="heading text-title"

@@ -5,7 +5,7 @@ import Typewriter from "./Typewriter";
 
 export default function Background() {
   return (
-    <section className="background">
+    <section id="background" className="background">
       <div className="container">
         <p className="heading text-section-title">Background</p>
         <div className="container-inner">
