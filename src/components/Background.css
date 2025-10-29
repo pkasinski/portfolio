@@ -83,10 +83,7 @@
 .background .descriptions {
   display: flex;
   flex-direction: column;
-}
-
-.description {
-  margin-bottom: 3lh;
+  gap: 2lh;
 }
 
 .description-text {
@@ -121,22 +118,15 @@
   color: var(--screamin-green);
 }
 
+/* Set the minimum height so that it will be 2lh when the viewport width is 1710, and 5lh when the viewport width is 375. */
 .bsc-courses {
   display: inline-block;
-  min-height: 5lh;
-}
-
-.bsc-description {
-  margin-bottom: 0;
+  min-height: clamp(2lh, calc(-8.08989vw + 210.33708px), 5lh);
 }
 
 .msc-courses {
   display: inline-block;
-  min-height: 5lh;
-}
-
-.msc-description {
-  margin-bottom: 0;
+  min-height: clamp(2lh, calc(-8.08989vw + 210.33708px), 5lh);
 }
 
 .background .typewriter .text {
