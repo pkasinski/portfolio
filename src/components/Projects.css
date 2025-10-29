@@ -13,3 +13,9 @@
 .projects .text-section-title {
   margin-bottom: 40px;
 }
+
+.projects .container-inner {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}

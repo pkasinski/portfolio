@@ -1,0 +1,46 @@
+.project {
+  max-width: 300px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border: 1px solid var(--antique-white);
+  background-color: var(--antique-white);
+  color: var(--eerie-black);
+  aspect-ratio: 1 / 1;
+}
+
+.project:hover {
+  background-color: var(--light-orange);
+  border-color: var(--light-orange);
+  cursor: pointer;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  height: 55%;
+  background-color: var(--jet);
+}
+
+.thumbnail {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.text-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+}
+
+.project-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.details-text {
+  text-align: center;
+  text-decoration: underline;
+}
