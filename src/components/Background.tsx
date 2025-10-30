@@ -115,8 +115,8 @@ export default function Background() {
               role="Computer Science and Engineering, MSc"
             >
               After completing my bachelor's studies I wanted to delve deeper
-              into the topic of algorithms as I think they are central to
-              computer science, and therefore chose the master's programme{" "}
+              into the topic of algorithms as I think it is central to computer
+              science, and therefore chose the master's programme{" "}
               <i>Computer science - algorithms, languages and logic</i>. During
               this period of my studies, I got to explore topics such as logic,
               optimization, and computer security, and got a deeper
