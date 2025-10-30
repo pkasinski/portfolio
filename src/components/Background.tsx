@@ -121,7 +121,7 @@ export default function Background() {
               this period of my studies, I got to explore topics such as logic,
               optimization, and computer security, and got a deeper
               understanding of algorithms, machine learning, and the underlying
-              principles of programming languages.{" "}
+              principles of programming languages. <br></br>
               <Typewriter
                 className="msc-courses"
                 preceedingText="After coming back from the student exchange I took courses such
