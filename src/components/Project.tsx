@@ -35,6 +35,12 @@ export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
       >
         <div className="image-container"></div>
         <div className="text-container"></div>
+        <button
+          className="close-button"
+          onClick={() => dialogRef.current?.close()}
+        >
+          <span className="material-symbols-outlined">close</span>
+        </button>
       </dialog>
     </>
   );

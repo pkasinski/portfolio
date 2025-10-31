@@ -105,3 +105,21 @@
 .project-dialog .text-container {
   background-color: var(--antique-white);
 }
+
+.close-button {
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  border: 2px solid var(--night);
+  background-color: var(--antique-white);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  background-color: var(--light-orange);
+}
