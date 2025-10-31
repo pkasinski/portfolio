@@ -33,7 +33,9 @@ export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
           }
         }}
       >
-        <div className="image-container"></div>
+        <div className="image-container">
+          <img src={thumbnailUrl} className="project-image" />
+        </div>
         <div className="text-container"></div>
         <button
           className="close-button"
