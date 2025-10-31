@@ -21,10 +21,18 @@ export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
         </div>
         <div className="text-container">
           <p className="project-title text-medium">{projectTitle}</p>
-          <p className="details-text">See more</p>
+          <p className="details-text">View details</p>
         </div>
       </div>
-      <dialog ref={dialogRef} className="project-dialog">
+      <dialog
+        ref={dialogRef}
+        className="project-dialog"
+        onClick={(event) => {
+          if (event.target instanceof HTMLDialogElement) {
+            dialogRef.current?.close();
+          }
+        }}
+      >
         <div className="image-container"></div>
         <div className="text-container"></div>
       </dialog>
