@@ -3,11 +3,18 @@ import "../App.css";
 import "./Project.css";
 
 interface ProjectProps {
-  projectTitle: string;
+  title: string;
+  techStack: string;
+  description: string;
   thumbnailUrl: string;
 }
 
-export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
+export default function Project({
+  title,
+  techStack,
+  description,
+  thumbnailUrl,
+}: ProjectProps) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   return (
@@ -20,7 +27,7 @@ export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
           <img src={thumbnailUrl} className="thumbnail" />
         </div>
         <div className="text-container">
-          <p className="project-title text-medium">{projectTitle}</p>
+          <p className="project-title text-medium">{title}</p>
           <p className="details-text">View details</p>
         </div>
       </div>
@@ -36,7 +43,11 @@ export default function Project({ projectTitle, thumbnailUrl }: ProjectProps) {
         <div className="image-container">
           <img src={thumbnailUrl} className="project-image" />
         </div>
-        <div className="text-container"></div>
+        <div className="text-container">
+          <p className="title heading">{title}</p>
+          <p className="tech-stack">Tech Stack: {techStack}</p>
+          <p className="description text-small">{description}</p>
+        </div>
         <button
           className="close-button"
           onClick={() => dialogRef.current?.close()}
