@@ -42,6 +42,14 @@ export default function Project({
       >
         <div className="image-container">
           <img src={thumbnailUrl} className="project-image" />
+          <div className="button-container">
+            <button className="next-button">
+              <span className="material-symbols-outlined">arrow_left_alt</span>
+            </button>
+            <button className="previous-button">
+              <span className="material-symbols-outlined">arrow_right_alt</span>
+            </button>
+          </div>
         </div>
         <div className="text-container">
           <p className="title heading">{title}</p>

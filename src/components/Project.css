@@ -76,6 +76,16 @@
   .project-dialog .title {
     margin-right: 64px;
   }
+
+  .close-button {
+    border: 2px solid var(--night);
+    background-color: var(--antique-white);
+    color: var(--night);
+  }
+
+  .close-button:hover {
+    background-color: var(--light-orange);
+  }
 }
 
 @media (orientation: portrait) {
@@ -96,6 +106,17 @@
   .project-dialog .title {
     margin-right: 16px;
   }
+
+  .close-button {
+    border: none;
+    background-color: var(--night);
+    opacity: 0.5;
+    color: var(--antique-white);
+  }
+
+  .close-button:hover {
+    opacity: 1;
+  }
 }
 
 .project-dialog::backdrop {
@@ -108,11 +129,12 @@
 
 .project-dialog .image-container {
   background-color: var(--jet);
+  position: relative;
 }
 
 .project-dialog .text-container {
   background-color: var(--antique-white);
-  min-width: 360px;
+  min-width: 280px;
 }
 
 .project-image {
@@ -127,7 +149,7 @@
 }
 
 .project-dialog .title {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   margin-left: 16px;
 }
 
@@ -143,20 +165,44 @@
   margin-top: 16px;
 }
 
-.close-button {
-  height: 48px;
-  width: 48px;
+.project-dialog button {
   padding: 0;
-  border: 2px solid var(--night);
-  background-color: var(--antique-white);
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.close-button:hover {
-  background-color: var(--light-orange);
+.close-button {
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+}
+
+.project-dialog .button-container {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  left: 16px;
+  right: 16px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.project-dialog .button-container button {
+  width: clamp(48px, 7vw, 72px);
+  height: clamp(48px, 7vw, 72px);
+  background-color: var(--night);
+  opacity: 0.5;
+  color: var(--antique-white);
+  border: none;
+}
+
+.project-dialog .button-container button:hover {
+  opacity: 1;
+}
+
+.project-dialog .button-container .material-symbols-outlined {
+  font-size: clamp(24px, 3vw, 36px);
 }
