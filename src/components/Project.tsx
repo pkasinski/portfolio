@@ -60,6 +60,19 @@ export default function Project({
     }
   }, [isOpen]);
 
+  // Disable scrolling underneath the dialog.
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div className="project-card" onClick={openDialog}>
