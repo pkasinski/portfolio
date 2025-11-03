@@ -93,21 +93,34 @@ export default function Project({
           }
         }}
       >
-        <div className="image-container">
-          <img src={imageUrls[imageIndex]} className="project-image" />
+        <div className="media-container">
+          {imageUrls[imageIndex].endsWith(".webm") ? (
+            <video
+              key={imageUrls[imageIndex]}
+              className="project-media"
+              controls
+              autoPlay
+              muted
+            >
+              <source src={imageUrls[imageIndex]} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img src={imageUrls[imageIndex]} className="project-media" />
+          )}
           {imageUrls.length > 1 && (
             <div className="button-container">
               <button
-                className="next-button"
-                onClick={() => changeImage("next")}
+                className="previous-button"
+                onClick={() => changeImage("previous")}
               >
                 <span className="material-symbols-outlined">
                   arrow_left_alt
                 </span>
               </button>
               <button
-                className="previous-button"
-                onClick={() => changeImage("previous")}
+                className="next-button"
+                onClick={() => changeImage("next")}
               >
                 <span className="material-symbols-outlined">
                   arrow_right_alt
