@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "../App.css";
 import "./Project.css";
 
@@ -7,6 +7,7 @@ interface ProjectProps {
   techStack: string;
   description: string;
   thumbnailUrl: string;
+  imageUrls: string[];
 }
 
 export default function Project({
@@ -14,8 +15,21 @@ export default function Project({
   techStack,
   description,
   thumbnailUrl,
+  imageUrls,
 }: ProjectProps) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
+  const [imageIndex, setImageIndex] = useState<number>(0);
+
+  const changeImage = (direction: "next" | "previous") => {
+    setImageIndex((prevIndex) => {
+      const numImages = imageUrls.length;
+      if (direction === "next") {
+        return (prevIndex + 1) % numImages;
+      } else {
+        return (prevIndex - 1 + numImages) % numImages;
+      }
+    });
+  };
 
   return (
     <>
@@ -41,12 +55,15 @@ export default function Project({
         }}
       >
         <div className="image-container">
-          <img src={thumbnailUrl} className="project-image" />
+          <img src={imageUrls[imageIndex]} className="project-image" />
           <div className="button-container">
-            <button className="next-button">
+            <button className="next-button" onClick={() => changeImage("next")}>
               <span className="material-symbols-outlined">arrow_left_alt</span>
             </button>
-            <button className="previous-button">
+            <button
+              className="previous-button"
+              onClick={() => changeImage("previous")}
+            >
               <span className="material-symbols-outlined">arrow_right_alt</span>
             </button>
           </div>
