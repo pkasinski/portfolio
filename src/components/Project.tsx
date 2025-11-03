@@ -22,14 +22,18 @@ export default function Project({
   const [imageIndex, setImageIndex] = useState<number>(0);
 
   const openDialog = () => {
-    dialogRef.current?.showModal();
     setIsOpen(true);
   };
 
   const closeDialog = () => {
-    dialogRef.current?.close();
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    if (isOpen && dialogRef.current) {
+      dialogRef.current.showModal();
+    }
+  }, [isOpen]);
 
   const changeImage = (direction: "next" | "previous") => {
     setImageIndex((prevIndex) => {
@@ -84,60 +88,62 @@ export default function Project({
           <p className="details-text">View details</p>
         </div>
       </div>
-      <dialog
-        ref={dialogRef}
-        className="project-dialog"
-        onClick={(event) => {
-          if (event.target instanceof HTMLDialogElement) {
-            closeDialog();
-          }
-        }}
-      >
-        <div className="media-container">
-          {imageUrls[imageIndex].endsWith(".webm") ? (
-            <video
-              key={imageUrls[imageIndex]}
-              className="project-media"
-              controls
-              autoPlay
-              muted
-            >
-              <source src={imageUrls[imageIndex]} type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img src={imageUrls[imageIndex]} className="project-media" />
-          )}
-          {imageUrls.length > 1 && (
-            <div className="button-container">
-              <button
-                className="previous-button"
-                onClick={() => changeImage("previous")}
+      {isOpen && (
+        <dialog
+          ref={dialogRef}
+          className="project-dialog"
+          onClick={(event) => {
+            if (event.target instanceof HTMLDialogElement) {
+              closeDialog();
+            }
+          }}
+        >
+          <div className="media-container">
+            {imageUrls[imageIndex].endsWith(".webm") ? (
+              <video
+                key={imageUrls[imageIndex]}
+                className="project-media"
+                controls
+                autoPlay
+                muted
               >
-                <span className="material-symbols-outlined">
-                  arrow_left_alt
-                </span>
-              </button>
-              <button
-                className="next-button"
-                onClick={() => changeImage("next")}
-              >
-                <span className="material-symbols-outlined">
-                  arrow_right_alt
-                </span>
-              </button>
-            </div>
-          )}
-        </div>
-        <div className="text-container">
-          <p className="title heading">{title}</p>
-          <p className="tech-stack">Tech Stack: {techStack}</p>
-          <p className="description text-small">{description}</p>
-        </div>
-        <button className="close-button" onClick={closeDialog}>
-          <span className="material-symbols-outlined">close</span>
-        </button>
-      </dialog>
+                <source src={imageUrls[imageIndex]} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img src={imageUrls[imageIndex]} className="project-media" />
+            )}
+            {imageUrls.length > 1 && (
+              <div className="button-container">
+                <button
+                  className="previous-button"
+                  onClick={() => changeImage("previous")}
+                >
+                  <span className="material-symbols-outlined">
+                    arrow_left_alt
+                  </span>
+                </button>
+                <button
+                  className="next-button"
+                  onClick={() => changeImage("next")}
+                >
+                  <span className="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </button>
+              </div>
+            )}
+          </div>
+          <div className="text-container">
+            <p className="title heading">{title}</p>
+            <p className="tech-stack">Tech Stack: {techStack}</p>
+            <p className="description text-small">{description}</p>
+          </div>
+          <button className="close-button" onClick={closeDialog}>
+            <span className="material-symbols-outlined">close</span>
+          </button>
+        </dialog>
+      )}
     </>
   );
 }
