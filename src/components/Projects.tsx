@@ -42,28 +42,34 @@ export default function Projects() {
             techStack=""
             description=""
             thumbnailUrl="src/assets/master's-thesis-cover.png"
-            imageUrls={["src/assets/master's-thesis-cover.png"]}
+            imageUrls={[
+              "src/assets/master's-thesis-cover.png",
+              "src/assets/master's-thesis-abstract.png",
+            ]}
           ></Project>
           <Project
             title="Typewriter Effect"
             techStack=""
             description=""
             thumbnailUrl="src/assets/typewriter-effect-screenshot.png"
-            imageUrls={["src/assets/typewriter-effect-screenshot.png"]}
+            imageUrls={["src/assets/typewriter-effect-video.webm"]}
           ></Project>
           <Project
             title="Memory Game"
             techStack=""
             description=""
             thumbnailUrl="src/assets/memory-game-screenshot.png"
-            imageUrls={["src/assets/typewriter-effect-screenshot.png"]}
+            imageUrls={["src/assets/memory-game-video.webm"]}
           ></Project>
           <Project
             title="Classifying Rivers using Deep Learning"
             techStack=""
             description=""
             thumbnailUrl="src/assets/bachelor's-thesis-cover.png"
-            imageUrls={["src/assets/typewriter-effect-screenshot.png"]}
+            imageUrls={[
+              "src/assets/bachelor's-thesis-cover.png",
+              "src/assets/bachelor's-thesis-abstract.png",
+            ]}
           ></Project>
         </div>
       </div>
