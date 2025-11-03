@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../App.css";
 import "./Project.css";
 
@@ -18,7 +18,18 @@ export default function Project({
   imageUrls,
 }: ProjectProps) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
   const [imageIndex, setImageIndex] = useState<number>(0);
+
+  const openDialog = () => {
+    dialogRef.current?.showModal();
+    setIsOpen(true);
+  };
+
+  const closeDialog = () => {
+    dialogRef.current?.close();
+    setIsOpen(false);
+  };
 
   const changeImage = (direction: "next" | "previous") => {
     setImageIndex((prevIndex) => {
@@ -31,12 +42,27 @@ export default function Project({
     });
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === "ArrowRight") {
+          changeImage("next");
+        } else if (e.key === "ArrowLeft") {
+          changeImage("previous");
+        }
+      };
+
+      window.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        window.removeEventListener("keydown", handleKeyDown);
+      };
+    }
+  }, [isOpen]);
+
   return (
     <>
-      <div
-        className="project-card"
-        onClick={() => dialogRef.current?.showModal()}
-      >
+      <div className="project-card" onClick={openDialog}>
         <div className="thumbnail-container">
           <img src={thumbnailUrl} className="thumbnail" />
         </div>
@@ -50,7 +76,7 @@ export default function Project({
         className="project-dialog"
         onClick={(event) => {
           if (event.target instanceof HTMLDialogElement) {
-            dialogRef.current?.close();
+            closeDialog();
           }
         }}
       >
@@ -73,10 +99,7 @@ export default function Project({
           <p className="tech-stack">Tech Stack: {techStack}</p>
           <p className="description text-small">{description}</p>
         </div>
-        <button
-          className="close-button"
-          onClick={() => dialogRef.current?.close()}
-        >
+        <button className="close-button" onClick={closeDialog}>
           <span className="material-symbols-outlined">close</span>
         </button>
       </dialog>
