@@ -49,7 +49,9 @@ export default function Project({
   useEffect(() => {
     if (isOpen) {
       const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === "ArrowRight") {
+        if (e.key === "Escape") {
+          closeDialog();
+        } else if (e.key === "ArrowRight") {
           changeImage("next");
         } else if (e.key === "ArrowLeft") {
           changeImage("previous");
