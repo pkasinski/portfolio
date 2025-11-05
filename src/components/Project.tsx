@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import "../App.css";
 import "./Project.css";
 
 interface ProjectProps {
   title: string;
   techStack: string;
-  description: string;
+  description: ReactNode;
   thumbnailUrl: string;
   imageUrls: string[];
 }
