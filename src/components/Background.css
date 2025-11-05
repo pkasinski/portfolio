@@ -118,15 +118,19 @@
   color: var(--screamin-green);
 }
 
-/* Set the minimum height so that it will be 2lh when the viewport width is 1710, and 5lh when the viewport width is 375. */
-.bsc-courses {
-  display: inline-block;
-  min-height: clamp(2lh, calc(-8.08989vw + 210.33708px), 5lh);
-}
-
+.bsc-courses,
 .msc-courses {
   display: inline-block;
-  min-height: clamp(2lh, calc(-8.08989vw + 210.33708px), 5lh);
+  --min-size: 4 * 27;
+  --max-size: 2 * 36;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  min-height: clamp(
+    2lh,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    4lh
+  );
 }
 
 .background .typewriter .text {

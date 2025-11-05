@@ -20,6 +20,8 @@ body {
   --persian-pink: #f986d2;
   --saffron: #f7c96e;
   --screamin-green: #6ef76e;
+  --min-vw: 3.75;
+  --max-vw: 17.1;
 }
 
 section {
@@ -42,15 +44,42 @@ a:hover {
 }
 
 .text-title {
-  font-size: clamp(2.25rem, 5vw, 5rem);
+  --min-size: 2.25 * 16;
+  --max-size: 5 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    2.25rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    5rem
+  );
 }
 
 .text-undertitle {
-  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  --min-size: 1.25 * 16;
+  --max-size: 1.75 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    1.25rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    1.75rem
+  );
 }
 
 .text-section-title {
-  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  --min-size: 2.25 * 16;
+  --max-size: 3.75 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    2.25rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    3.75rem
+  );
 }
 
 .heading {
@@ -62,16 +91,51 @@ a:hover {
   font-size: 1.75rem;
 }
 
+.text-big-responsive {
+  --min-size: 1.5 * 16;
+  --max-size: 1.75 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    1.5rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    1.75rem
+  );
+}
+
 .text-medium {
   font-size: 1.5rem;
 }
 
 .text-medium-responsive {
-  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  --min-size: 1.125 * 16;
+  --max-size: 1.5 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    1.125rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    1.5rem
+  );
 }
 
 .text-small {
   font-size: 1.25rem;
+}
+
+.text-small-responsive {
+  --min-size: 1 * 16;
+  --max-size: 1.25 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    1rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    1.25rem
+  );
 }
 
 footer {

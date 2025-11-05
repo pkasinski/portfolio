@@ -153,7 +153,16 @@
 }
 
 .project-dialog .title {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  --min-size: 1.5 * 16;
+  --max-size: 2.5 * 16;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    1.5rem,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    2.5rem
+  );
   margin-left: 16px;
 }
 
@@ -195,8 +204,17 @@
 }
 
 .project-dialog .button-container button {
-  width: clamp(48px, 7vw, 72px);
-  height: clamp(48px, 7vw, 72px);
+  --min-size: 48;
+  --max-size: 72;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  width: clamp(48px, calc(var(--slope) * 1vw + var(--y-intercept) * 1px), 72px);
+  height: clamp(
+    48px,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    72px
+  );
   background-color: var(--night);
   opacity: 0.5;
   color: var(--antique-white);
@@ -208,7 +226,16 @@
 }
 
 .project-dialog .button-container .material-symbols-outlined {
-  font-size: clamp(24px, 3vw, 36px);
+  --min-size: 24;
+  --max-size: 36;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+
+  font-size: clamp(
+    24px,
+    calc(var(--slope) * 1vw + var(--y-intercept) * 1px),
+    36px
+  );
 }
 
 .project-dialog a {
