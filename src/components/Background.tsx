@@ -1,4 +1,5 @@
 import "../App.css";
+import { scrollToSection } from "../utils";
 import "./Background.css";
 import Experience from "./Experience";
 import Typewriter from "./Typewriter";
@@ -156,7 +157,12 @@ export default function Background() {
               on a map. Throughout the project, I worked in a fullstack manner,
               being responsible for the backend, the frontend, and the design of
               the user interface. The project culminated in us running the app
-              on truck hardware, and testing the app while driving a truck.
+              on truck hardware, and testing the app while driving a truck. More
+              details about the app can be found in the{" "}
+              <a onClick={() => scrollToSection("projects")}>
+                Projects section
+              </a>
+              .
             </Experience>
             <Experience
               className="description volvo-autumn-description"

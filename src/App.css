@@ -33,6 +33,14 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 .text-title {
   font-size: clamp(2.25rem, 5vw, 5rem);
 }
