@@ -123,10 +123,6 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.project-dialog:focus {
-  outline: none;
-}
-
 .project-dialog .media-container {
   background-color: var(--jet);
   position: relative;
