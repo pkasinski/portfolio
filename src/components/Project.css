@@ -38,6 +38,7 @@
 
 .project-card .project-title {
   text-align: center;
+  font-weight: bold;
 }
 
 .project-card .details-text {
