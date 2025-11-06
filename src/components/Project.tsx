@@ -140,7 +140,7 @@ export default function Project({
           <div className="text-container">
             <p className="title heading">{title}</p>
             <p className="tech-stack">Tech Stack: {techStack}</p>
-            <p className="description text-small">{description}</p>
+            <p className="description text-small-responsive">{description}</p>
           </div>
           <button className="close-button" onClick={closeDialog}>
             <span className="material-symbols-outlined">close</span>
