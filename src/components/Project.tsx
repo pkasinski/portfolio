@@ -108,6 +108,7 @@ export default function Project({
                 controls
                 autoPlay
                 muted
+                playsInline
               >
                 <source src={imageUrls[imageIndex]} type="video/webm" />
                 Your browser does not support the video tag.
