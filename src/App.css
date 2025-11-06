@@ -5,6 +5,7 @@ body {
   font-family: "Questrial", "Urbanist", "Montserrat", sans-serif;
   background-color: var(--antique-white);
   color: var(--night);
+  overscroll-behavior: none;
 }
 
 *:focus {
