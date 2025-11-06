@@ -12,29 +12,29 @@ export default function Projects() {
             title="App for Planning and Visualizing Routes"
             techStack="Flutter/Dart, Flutter Maps, Provider, Python, Flask, Git, etc."
             description='At Volvo Group, I developed an app for planning and visualizing routes with optimal charging stops for electric trucks. In the app, the user provides an origin location and a destination location, and optionally waypoints that should be passed through along the way. Then, the user can adjust the minimum SoC at arrival, i.e. the requested minimum vehicle battery percentage after having completed the route, and the initial payload. Subsequently, the user can press "Preview" to see a route with the provided locations, or press "Plan" to get a route complete with suggested charging stops. Once a route has been planned, details about the stops are displayed in the timeline view, and the route is shown on the map. The map also shows the current position of the vehicle, and has buttons that let the user zoom in and out, follow the vehicle, or open the developer view. The developer view was requested by the team that I worked it as it lets them evaluate how accurate their predictions of the state of charge (SoC) is compared to reality. If the SoC of the vehicle deviates too much from the predicted value at a certain point on the route, the charging stops are automatically recalculated. Some other features in the app are that the user can provide a location using either an address or coordinates, see and copy coordinates by holding a position on the map, easily use the current vehicle location as the origin, and specify some charging locations on their own.'
-            thumbnailUrl="/assets/volvo-app/screenshot-1.png"
+            thumbnailUrl="/portfolio/assets/volvo-app/screenshot-1.png"
             imageUrls={[
-              "/assets/volvo-app/app-recording-2.webm",
-              "/assets/volvo-app/app-recording-3.webm",
-              "/assets/volvo-app/screenshot-1.png",
-              "/assets/volvo-app/screenshot-2.png",
-              "/assets/volvo-app/screenshot-3.png",
-              "/assets/volvo-app/screenshot-4.png",
-              "/assets/volvo-app/screenshot-5.png",
-              "/assets/volvo-app/screenshot-6.png",
-              "/assets/volvo-app/screenshot-7.png",
-              "/assets/volvo-app/screenshot-8.png",
-              "/assets/volvo-app/screenshot-9.png",
-              "/assets/volvo-app/screenshot-10.png",
-              "/assets/volvo-app/screenshot-11.png",
-              "/assets/volvo-app/screenshot-12.png",
-              "/assets/volvo-app/screenshot-13.png",
-              "/assets/volvo-app/screenshot-14.png",
-              "/assets/volvo-app/screenshot-15.png",
-              "/assets/volvo-app/screenshot-16.png",
-              "/assets/volvo-app/screenshot-17.png",
-              "/assets/volvo-app/screenshot-18.png",
-              "/assets/volvo-app/app-recording-1.webm",
+              "/portfolio/assets/volvo-app/app-recording-2.webm",
+              "/portfolio/assets/volvo-app/app-recording-3.webm",
+              "/portfolio/assets/volvo-app/screenshot-1.png",
+              "/portfolio/assets/volvo-app/screenshot-2.png",
+              "/portfolio/assets/volvo-app/screenshot-3.png",
+              "/portfolio/assets/volvo-app/screenshot-4.png",
+              "/portfolio/assets/volvo-app/screenshot-5.png",
+              "/portfolio/assets/volvo-app/screenshot-6.png",
+              "/portfolio/assets/volvo-app/screenshot-7.png",
+              "/portfolio/assets/volvo-app/screenshot-8.png",
+              "/portfolio/assets/volvo-app/screenshot-9.png",
+              "/portfolio/assets/volvo-app/screenshot-10.png",
+              "/portfolio/assets/volvo-app/screenshot-11.png",
+              "/portfolio/assets/volvo-app/screenshot-12.png",
+              "/portfolio/assets/volvo-app/screenshot-13.png",
+              "/portfolio/assets/volvo-app/screenshot-14.png",
+              "/portfolio/assets/volvo-app/screenshot-15.png",
+              "/portfolio/assets/volvo-app/screenshot-16.png",
+              "/portfolio/assets/volvo-app/screenshot-17.png",
+              "/portfolio/assets/volvo-app/screenshot-18.png",
+              "/portfolio/assets/volvo-app/app-recording-1.webm",
             ]}
           ></Project>
           <Project
@@ -73,26 +73,26 @@ export default function Projects() {
                 .
               </>
             }
-            thumbnailUrl="/assets/master's-thesis-cover.png"
+            thumbnailUrl="/portfolio/assets/master's-thesis-cover.png"
             imageUrls={[
-              "/assets/master's-thesis-cover.png",
-              "/assets/master's-thesis-abstract.png",
-              "/assets/master's-thesis-overview.png",
+              "/portfolio/assets/master's-thesis-cover.png",
+              "/portfolio/assets/master's-thesis-abstract.png",
+              "/portfolio/assets/master's-thesis-overview.png",
             ]}
           ></Project>
           <Project
             title="Typewriter Effect"
             techStack="TypeScript, React"
             description="While building my portfolio website, I knew early on that I wanted to include an animation where text is written out as if someone was typing it. I began using an existing package to achieve this effect, but after realizing I could not customize the component how I wanted to, I decided to recreate it with options that suited me. Not only was this practical, but it was also interesting to get a better understanding of the inner workings of a so-called typewriter component by creating it from scratch. The custom-made typewriter component has been used on multiple occasions on the website that you are currently viewing."
-            thumbnailUrl="/assets/typewriter-effect-screenshot.png"
-            imageUrls={["/assets/typewriter-effect-video.webm"]}
+            thumbnailUrl="/portfolio/assets/typewriter-effect-screenshot.png"
+            imageUrls={["/portfolio/assets/typewriter-effect-video.webm"]}
           ></Project>
           <Project
             title="Memory Game"
             techStack="JavaScript, React"
             description="To get a better understanding of the fundamentals of React, I decided to build a memory game. The default number of cards is set to 20, but the user can adjust the difficulty of the game by selecting the number of cards. When a game is started, random images are fetched from the Lorem Picsum API, meaning that they can differ from game to game. Then, each turn, the user selects two cards in an attempt to find the cards with matching images. Once all pairs of cards have been found, the game is over and the user can see how many turns it took them to finish the game, and optionally start a new game. During the project, care was taken to make the flipping animations look nice and smooth, but also to make the application responsive, i.e. to make it work on different screen sizes."
-            thumbnailUrl="/assets/memory-game-screenshot.png"
-            imageUrls={["/assets/memory-game-video.webm"]}
+            thumbnailUrl="/portfolio/assets/memory-game-screenshot.png"
+            imageUrls={["/portfolio/assets/memory-game-video.webm"]}
           ></Project>
           <Project
             title="Classifying Rivers using Deep Learning"
@@ -112,10 +112,10 @@ of limited quality, a moderately accurate classification model was ultimately cr
 The best performing model was made using Amazon Rekognition and reached an
 F1 score of 62.5%. It was used to predict the difficulties of segments of Swedish
 rivers and the resulting classifications were presented in a web application.&quot;"
-            thumbnailUrl="/assets/bachelor's-thesis-cover.png"
+            thumbnailUrl="/portfolio/assets/bachelor's-thesis-cover.png"
             imageUrls={[
-              "/assets/bachelor's-thesis-cover.png",
-              "/assets/bachelor's-thesis-abstract.png",
+              "/portfolio/assets/bachelor's-thesis-cover.png",
+              "/portfolio/assets/bachelor's-thesis-abstract.png",
             ]}
           ></Project>
         </div>
