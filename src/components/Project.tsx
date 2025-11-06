@@ -67,7 +67,10 @@ export default function Project({
   }, [isOpen]);
 
   const preventTouchMove = (e: TouchEvent) => {
-    e.preventDefault();
+    const target = e.target as HTMLElement;
+    if (!target.closest(".text-container")) {
+      e.preventDefault();
+    }
   };
 
   // Disable scrolling underneath the dialog.
