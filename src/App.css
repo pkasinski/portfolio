@@ -8,6 +8,11 @@ body {
   overscroll-behavior: none;
 }
 
+body.noscroll {
+  width: 100%;
+  overflow: hidden;
+}
+
 *:focus {
   outline: none;
 }

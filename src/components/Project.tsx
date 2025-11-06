@@ -66,16 +66,25 @@ export default function Project({
     }
   }, [isOpen]);
 
+  const preventTouchMove = (e: TouchEvent) => {
+    e.preventDefault();
+  };
+
   // Disable scrolling underneath the dialog.
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("noscroll");
+      document.addEventListener("touchmove", preventTouchMove, {
+        passive: false,
+      });
     } else {
-      document.body.style.overflow = "";
+      document.body.classList.remove("noscroll");
+      document.removeEventListener("touchmove", preventTouchMove);
     }
 
     return () => {
-      document.body.style.overflow = "";
+      document.body.classList.remove("noscroll");
+      document.removeEventListener("touchmove", preventTouchMove);
     };
   }, [isOpen]);
 
