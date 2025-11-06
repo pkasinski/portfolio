@@ -22,6 +22,7 @@
 }
 
 .introduction button {
+  color: var(--night);
   background-color: var(--antique-white);
   border: 2px solid var(--night);
   padding: 0.5lh 1lh;
