@@ -15,17 +15,30 @@
 
 .background .container-inner {
   display: flex;
-  gap: 32px;
+  --min-size: 16;
+  --max-size: 32;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+  gap: clamp(16px, calc(var(--slope) * 1vw + var(--y-intercept) * 1px), 32px);
 }
 
 .timeline {
   height: 2000px;
   display: flex;
-  gap: 8px;
+
+  --min-size: 4;
+  --max-size: 8;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+  gap: clamp(4px, calc(var(--slope) * 1vw + var(--y-intercept) * 1px), 8px);
 }
 
 .line {
-  width: 8px;
+  --min-size: 4;
+  --max-size: 8;
+  --slope: (var(--max-size) - var(--min-size)) / (var(--max-vw) - var(--min-vw));
+  --y-intercept: (var(--min-size) - var(--min-vw) * var(--slope));
+  width: clamp(4px, calc(var(--slope) * 1vw + var(--y-intercept) * 1px), 8px);
   flex-shrink: 0;
 }
 
