@@ -7,6 +7,10 @@ body {
   color: var(--night);
 }
 
+*:focus {
+  outline: none;
+}
+
 :root {
   --night: #161413;
   --eerie-black: #201e1c;
@@ -31,16 +35,13 @@ section {
   align-items: center;
 }
 
-button:hover {
+button:hover,
+a:hover {
   cursor: pointer;
 }
 
 a {
   text-decoration: underline;
-}
-
-a:hover {
-  cursor: pointer;
 }
 
 .text-title {
@@ -164,10 +165,6 @@ footer .footer-links {
 .footer-links a {
   font-size: 1.25rem;
   padding: 12px;
-}
-
-.footer-links a:hover {
-  cursor: pointer;
 }
 
 footer a {

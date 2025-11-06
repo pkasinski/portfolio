@@ -8,7 +8,8 @@
   aspect-ratio: 1 / 1;
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-card:focus {
   background-color: var(--light-orange);
   border-color: var(--light-orange);
   cursor: pointer;
@@ -114,7 +115,8 @@
     color: var(--antique-white);
   }
 
-  .close-button:hover {
+  .close-button:hover,
+  .close-button:focus {
     opacity: 1;
   }
 }
@@ -217,7 +219,8 @@
   border: none;
 }
 
-.project-dialog .button-container button:hover {
+.project-dialog .button-container button:hover,
+.project-dialog .button-container button:focus {
   opacity: 1;
 }
 

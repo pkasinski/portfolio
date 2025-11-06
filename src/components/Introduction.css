@@ -28,6 +28,7 @@
   padding: 0.5lh 1lh;
 }
 
-.introduction button:hover {
+.introduction button:hover,
+button:focus {
   background-color: var(--light-orange);
 }
