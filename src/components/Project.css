@@ -83,7 +83,8 @@
     color: var(--night);
   }
 
-  .close-button:hover {
+  .close-button:hover,
+  .close-button:focus {
     background-color: var(--light-orange);
   }
 }
@@ -116,6 +117,7 @@
 
   .close-button:hover,
   .close-button:focus {
+    background-color: var(--night);
     opacity: 1;
   }
 }
